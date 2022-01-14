@@ -1,0 +1,41 @@
+====================================UUM Bank Statement====================================
+
+Name           : STEVE ROGERS
+Phone Number   : 0199399167
+Account Number : 03030020001030
+Pin No.        : 876543
+Salary         : RM 3500
+
+Your annual salary is  : RM 42000.0
+
+SUGGESTED YEARS OF LOAN REPAYMENT : 4 YEARS
+
+Do you agree with the suggested years?
+Press 'Y' for YES or 'N' for NO : N
+
+Please enter the amount of years that you want : 5
+Very well!
+
+Please enter the amount of loan : RM 100000
+INTEREST RATE : 6.5% 
+
+Please enter the amount of interest rate (%) again to confirm : 6.5
+=========================================================================================
+REPAYMENT : 
+
+The sum of interest is       : RM 32500.00
+The monthly repayment is     : RM 2208.33
+The annual repayment is      : RM 26500.00
+=========================================================================================
+
+If you are UNABLE to pay it on time,a PENALTY will be charged by the bank.
+
+Penalty Charged (1.0% per annum) : RM 265.0
+
+=========================================================================================
+
+                            THANK YOUR FOR CHOOSING US!
+
+=========================================================================================
+
+ 
