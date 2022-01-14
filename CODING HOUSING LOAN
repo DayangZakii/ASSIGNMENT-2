@@ -1,0 +1,86 @@
+package bank;
+import java.util.Scanner;
+public class Assignments2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+				String name;
+				int age, accnumber;
+				double salary, houseprice, maximumloan, loan, totalloan, monthlypayment, loanperiod, eligiblesalary, eligibleloan;
+				int counter = 0;
+				boolean acceess = true;
+				
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.println("**************************************UUM BANK**********************************************");
+				
+       System.out.print("WELCOME TO UUM BANK!");
+			    
+			    
+	System.out.print("\nName           :");
+	name = sc.nextLine();
+				
+	System.out.print("Account Number :");
+	accnumber = sc.nextInt();
+				
+	boolean access=false;
+	do {
+	     System.out.print("Age            :");
+	     age = sc.nextInt();
+					
+	     System.out.print("Monthly Salary : RM");
+	     salary = sc.nextDouble();
+					
+	     System.out.print("\nHouse Price  : RM");
+	     houseprice = sc.nextDouble();
+					
+	     maximumloan = 0.9 * houseprice;
+	     System.out.printf("Maximum Loan  : RM %.2f" ,      maximumloan);
+					
+	     System.out.println();
+					
+	     System.out.print("\nLoan         : RM");
+	     loan = sc.nextDouble();
+					
+	     totalloan = 1.15 * loan;
+	     System.out.printf("Total Loan    : RM%.2f" , totalloan);
+           eligiblesalary = 0.1 * salary;
+	    eligibleloan = 0.0001 * totalloan;
+		            
+           if ((age>18 && age<55) && (eligiblesalary<eligibleloan)) {
+		            
+      System.out.println("                         Your're Eligible To Make A Loan");
+		            	System.out.print("\n=======================================================");
+						
+	    monthlypayment = 0.005 * totalloan;
+	    System.out.printf("\nMonthly Payment: RM%.2f" , monthlypayment);
+						
+	    loanperiod = totalloan / monthlypayment;
+	    System.out.print("\nLoan Period    :" + loanperiod + "months");
+						
+				System.out.print("\n=======================================================");
+						
+	System.out.println("\n                      Thank You For Using Our Service");
+
+	System.exit(0);
+       }
+		            
+	else
+      {
+      System.out.println();
+      System.out.println("\n                  Your're Not Eligible To Make A Loan"); 
+		                	System.out.print("========================================================="); 				
+      System.out.println("\n                       Thank You For Using Our Service");
+		    				
+	    }
+		                		               		        		              		            	           		                
+      }
+     while(access==true); 
+								
+     sc.close();
+
+	   }
+
+}
+
